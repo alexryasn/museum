@@ -1,0 +1,41 @@
+<html>
+
+<head>
+    <title>Page Title</title>
+
+</head>
+
+<body>
+
+    <h1>My First Heading</h1>
+    <p>My first paragraph.</p>
+
+    <script src="js/three.min.js"></script>
+    <script src="js/panolens.min.js"></script>
+
+    <p id="demo"></p>
+
+    <!--
+    <script>
+        document.getElementById("demo").innerHTML = "Hello JavaScript ZZZZ!";
+    </script>
+    -->
+
+    <script>
+        /*
+        var myHeaders = new Headers(); 
+        console.log(myHeaders);
+        myHeaders.append('Access-Control-Allow-Origin:','*');
+        console.log(myHeaders);
+        */
+        const panorama = new PANOLENS.ImagePanorama('https://assets.lifesitenews.com/images/made/images/remote/https_www.lifesitenews.com/images/local/New-York-City_1024_512_75_s_c1.jpg');
+        // const panorama = new PANOLENS.ImagePanorama('https://assets.lifesitenews.com/images/made/images/remote/https_www.lifesitenews.com/images/local/New-York-City_1024_512_75_s_c1.jpg');
+        // const panorama = new PANOLENS.ImagePanorama('asset/textures/equirectangular/panorama.jpg');
+        const viewer = new PANOLENS.Viewer();
+        viewer.add(panorama);
+
+    </script>
+
+</body>
+
+</html>
