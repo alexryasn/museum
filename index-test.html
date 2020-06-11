@@ -1,0 +1,26 @@
+<html>
+
+<head>
+    <title>Тест</title>
+
+</head>
+
+<body>
+
+    <h1>Тест</h1>
+
+    <script src="three.min.js"></script>
+    <script src="panolens.min.js"></script>
+
+    <p id="demo"></p>
+
+    <script>
+        const panorama = new PANOLENS.ImagePanorama('https://alexryasn.github.io/museum/asset/test.jpg');
+        const viewer = new PANOLENS.Viewer();
+        viewer.add(panorama);
+
+    </script>
+
+</body>
+
+</html>
